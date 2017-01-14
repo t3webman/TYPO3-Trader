@@ -1,0 +1,61 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<!--
+	=====================
+		Partials/List/homeObject.html -->
+
+	<article class="col-md-6 col-lg-4">
+		<div class="homeObject{f:if(condition: object.featured, then: ' featured')}">
+
+		<!-- Image & Intro -->
+			<f:link.action action="show" arguments="{object:object}" title="{object.title}">
+				<figure class="object-preview">
+					<f:if condition="{object.images}">
+						<f:then>
+							<f:image src="{object.images.0.uid}" treatIdAsReference="1" width="{settings.list.media.image.maxWidth}c" height="{settings.list.media.image.maxHeight}" class="img-responsive" />
+						</f:then>
+						<f:else>
+							<f:image src="{settings.list.media.noImage}" width="{settings.list.media.image.maxWidth}c" height="{settings.list.media.image.maxHeight}" class="img-responsive"></f:image>
+						</f:else>
+					</f:if>
+					<figcaption>
+						<div class="object-intro">
+							<h4 class="address">{object.zip} {object.city}, {object.province}</h4>
+							<f:if condition="{object.teaser}">
+								<f:then>
+									<p>{object.teaser -> f:format.crop(maxCharacters: '{settings.teaserCrop}', respectWordBoundaries:'1') -> f:format.html()}</p>
+								</f:then>
+								<f:else>
+									<p>{object.description -> f:format.crop(maxCharacters: '{settings.teaserCrop}', respectWordBoundaries:'1') -> f:format.html()}</p>
+								</f:else>
+							</f:if>
+						</div>
+						<f:if condition="{object.tag}">
+							<div class="object-tag tag-left">{object.tag.tag}</div>
+						</f:if>
+					</figcaption>
+				</figure>
+			</f:link.action>
+
+		<!-- Content -->
+			<div class="object-content">
+				<div class="object-title">
+					<f:link.action action="show" arguments="{object: object}" title="{object.title}">
+						{object.title -> f:format.crop(maxCharacters: '{settings.titleCrop}', respectWordBoundaries:'0') -> f:format.html()}
+					</f:link.action>
+				</div>
+				<f:if condition="{object.isproject}">
+					<f:then>
+						<f:render partial="List/Features/Project" arguments="{object: object}"/>
+					</f:then>
+					<f:else>
+						<f:render partial="List/Features/Object" arguments="{object: object}"/>
+					</f:else>
+				</f:if>
+
+			</div><!-- .object-content -->
+
+		</div><!-- .object -->
+	</article>
+
+</html>

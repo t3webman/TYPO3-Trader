@@ -1,0 +1,50 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+{namespace nr=Newred\Trader\ViewHelpers}
+
+<f:layout name="Default" />
+<!--
+	=====================
+		Templates/Object/List.html -->
+
+<f:section name="main">
+	<!--TYPO3SEARCH_end-->
+	<div class="container" style="margin-top:30px">
+	<f:if condition="{objects}">
+		<f:then>
+			<f:if condition="{settings.hidePagination}">
+				<f:then>
+					<div class="trader-row">
+						<f:for each="{objects}" as="object" iteration="iterator">
+							<f:render partial="List/{settings.templateLayout}Object" arguments="{object:object, settings:settings, iterator:iterator}" />
+						</f:for>
+					</div>
+				</f:then>
+				<f:else>
+					<nr:paginate objects="{objects}" as="paginatedObjekt"
+						configuration="{
+							itemsPerPage: settings.paginate.itemsPerPage,
+							insertAbove: settings.paginate.insertAbove,
+							insertBelow: settings.paginate.insertBelow,
+							maximumVisiblePages:  settings.paginate.maximumVisiblePages,
+							displayDots: settings.paginate.displayDots
+						}">
+					<div class="trader-row">
+						<f:for each="{paginatedObjekt}" as="object" iteration="iterator">
+							<f:render partial="List/{settings.templateLayout}Object" arguments="{object:object, settings:settings, iterator:iterator}" />
+						</f:for>
+					</div>
+					</nr:paginate>
+				</f:else>
+			</f:if>
+		</f:then>
+		<f:else>
+			<div class="no-object-found">
+				<f:translate key="list_noobjectsfound" />
+			</div>
+		</f:else>
+	</f:if>
+	</div>
+	<!--TYPO3SEARCH_begin-->
+</f:section>
+</html>

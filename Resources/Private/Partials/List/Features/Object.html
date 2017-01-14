@@ -1,0 +1,99 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<!--
+	=====================
+		Partials/List/Features/Object.html-->
+
+	<div class="object-meta clearfix">
+		<div>
+			<div class="meta-title"><i class="icon-size-house"></i></div>
+			<div class="meta-data" data-toggle="tooltip" title="Size">
+				{object.areatotal} <f:translate key="{settings.surfaceMeasure}" />
+			</div>
+		</div>
+		<div>
+			<div class="meta-title"><i class="icon-room"></i></div>
+			<div class="meta-data" data-toggle="tooltip" title="{f:translate(key: 'rooms')}">{object.norooms}
+				<f:if condition="{object.norooms} == 1">
+					<f:then>
+						<f:translate key="room" />
+					</f:then>
+					<f:else>
+						<f:translate key="rooms" />
+					</f:else>
+				</f:if>
+			</div>
+		</div>
+		<div>
+			<div class="meta-title"><i class="icon-bedroom"></i></div>
+			<div class="meta-data" data-toggle="tooltip" title="{f:translate(key: 'bedrooms')}">{object.nobedrooms}
+				<f:if condition="{object.nobedrooms} == 1">
+					<f:then>
+						<f:translate key="bedroom" />
+					</f:then>
+					<f:else>
+						<f:translate key="bedrooms" />
+					</f:else>
+				</f:if>
+			</div>
+		</div>
+		<div>
+			<div class="meta-title"><i class="icon-bathroom"></i></div>
+			<div class="meta-data" data-toggle="tooltip" title="{f:translate(key: 'bathrooms')}">{object.nobathrooms}
+				<f:if condition="{object.nobathrooms} == 1">
+					<f:then>
+						<f:translate key="bathroom" />
+					</f:then>
+					<f:else>
+						<f:translate key="bathrooms" />
+					</f:else>
+				</f:if>
+			</div>
+		</div>
+	</div>
+
+	<div class="object-foot">
+
+	<!-- Price -->
+		<div class="price-tag">
+			<f:if condition="{object.pricereserved}">
+				<f:then>
+					<f:translate key="priceReserved" />
+				</f:then>
+				<f:else>
+					<f:if condition="{object.marketing} == 1">
+						<!-- rent -->
+						<f:format.currency currencySign="{settings.currencySign}" prependCurrency="true" decimals="{settings.decimals}">{object.rent}</f:format.currency>
+						<f:translate key="per.month" />
+					</f:if>
+					<f:if condition="{object.marketing} == 2">
+						<!-- sale -->
+						<f:format.currency currencySign="{settings.currencySign}" prependCurrency="true" decimals="{settings.decimals}">{object.pricetotal}</f:format.currency>
+					</f:if>
+				</f:else>
+			</f:if>
+		</div>
+
+	<!-- Icons -->
+		<div class="socials">
+			<span style="position: relative">
+				<div class="share-unit" style="display: none;">
+					<a class="social-facebook" target="_blank" href="#"><i class="icon-facebook"></i></a>
+					<a class="social-twitter" target="_blank" href="#"><i class="icon-twitter"></i></a>
+					<a class="social-google" target="_blank" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" href="#"><i class="icon-google-plus"></i></a>
+					<a class="social-pinterest" target="_blank" href="#"><i class="icon-pinterest"></i></a>
+				</div>
+				<i class="icon-share share-property" data-toggle="tooltip" data-original-title="Share" title="Share"></i>
+			</span>
+			<i class="add-to-favorites icon-heart" data-fav-id="142" data-toggle="tooltip" title="Add To Favorites"></i>
+			<f:if condition="{object.videos}">
+				<a href="#" class="property-video-popup">
+					<i class="icon-video" data-toggle="tooltip" title="Watch Trailer"></i>
+				</a>
+			</f:if>
+			<i class="icon-add compare-property" data-compare-id="142" data-toggle="tooltip" title="Compare"></i>
+		</div>
+		<div class="clearfix"></div>
+
+	</div><!-- .object-foot -->
+</html>

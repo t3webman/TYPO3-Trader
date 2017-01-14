@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-12-06T08:33:49Z" product-name="trader">
+		<header/>
+		<body>
+			<trans-unit id="tx_trader_domain_model_object">
+				<source>Object</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.select.none">
+				<source>none</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.reference">
+				<source>Reference</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.tag">
+				<source>Tag</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.featured">
+				<source>Featured</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.teaser">
+				<source>Teaser (optional)</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.details">
+				<source>Additional Details</source>
+			</trans-unit>
+
+		<!-- status select options -->
+			<trans-unit id="tx_trader_domain_model_object.status">
+				<source>Status</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.status.0">
+				<source>Available</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.status.1">
+				<source>Reserved</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.status.2">
+				<source>Sold</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.status.3">
+				<source>Archived</source>
+			</trans-unit>
+
+			<trans-unit id="tx_trader_domain_model_object.availdate">
+				<source>Date object available</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.auctiondate">
+				<source>Date object auctioned</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.rented">
+				<source>Rented</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.rentdate">
+				<source>End date contract</source>
+			</trans-unit>
+
+		<!-- MARKETING TAB -->
+			<trans-unit id="tx_trader_domain_model_object.tab.marketing">
+				<source>Marketing</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.isproject">
+				<source>Object is a project</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.objects">
+				<source>Objects pertaining to project</source>
+			</trans-unit>
+
+		<!-- marketing select options -->
+			<trans-unit id="tx_trader_domain_model_object.marketing">
+				<source>Marketing</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.marketing.0">
+				<source>Select</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.marketing.1">
+				<source>Rent</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.marketing.2">
+				<source>Sale</source>
+			</trans-unit>
+
+			<trans-unit id="tx_trader_domain_model_object.categories">
+				<source>Categories</source>
+			</trans-unit>
+
+		<!-- ADDRESS TAB -->
+			<trans-unit id="tx_trader_domain_model_object.tab.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.street">
+				<source>Street</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.number">
+				<source>Number</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.zip">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.region">
+				<source>Region</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.province">
+				<source>Province</source>
+			</trans-unit>
+
+		<!-- country select options -->
+			<trans-unit id="tx_trader_domain_model_object.country">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.country.0">
+				<source>Switzerland</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.country.1">
+				<source>Italy</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.country.2">
+				<source>United Kingdom</source>
+			</trans-unit>
+
+			<trans-unit id="tx_trader_domain_model_object.latitude">
+				<source>Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.longitude">
+				<source>Longitude</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.hideadress">
+				<source>Hide address</source>
+			</trans-unit>
+
+		<!-- CONTACTS TAB -->
+			<trans-unit id="tx_trader_domain_model_object.tab.contacts">
+				<source>Contacts</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.contact">
+				<source>Contact</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.owner">
+				<source>Owner</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.broker">
+				<source>Broker</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.hidecontact">
+				<source>Hide contacts</source>
+			</trans-unit>
+
+		<!-- FEATURES TAB -->
+			<trans-unit id="tx_trader_domain_model_object.tab.features">
+				<source>Features</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.far">
+				<source>Floor Area Ratio (FAR)</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.fsi">
+				<source>Floor Space Index (FSI)</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.builddate">
+				<source>Year of construction</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.areatotal">
+				<source>Lot Size</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.areausable">
+				<source>Usable Area</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.arealiving">
+				<source>Living Area</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.areabase">
+				<source>Base Area</source>
+			</trans-unit>
+
+		<!-- floor select options -->
+			<trans-unit id="tx_trader_domain_model_object.floor">
+				<source>Floor</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.floor.0">
+				<source>Ground floor</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.floor.1">
+				<source>First floor</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.floor.2">
+				<source>Second floor</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.floor.3">
+				<source>Third floor</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.floor.4">
+				<source>Fourth floor</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.floor.5">
+				<source>Fifth floor</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.floor.6">
+				<source>Sixth floor</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.floor.7">
+				<source>Seventh floor</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.floor.8">
+				<source>Eighth floor</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.floor.9">
+				<source>Ninht floor</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.floor.50">
+				<source>Elevated floor</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.floor.100">
+				<source>Top floor</source>
+			</trans-unit>
+
+			<trans-unit id="tx_trader_domain_model_object.floors">
+				<source>Number of floors</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.norooms">
+				<source>Rooms (technical)</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.nobedrooms">
+				<source>Number of bedrooms</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.nobathrooms">
+				<source>Number of bathrooms</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.noparking">
+				<source>Number of parking lots</source>
+			</trans-unit>
+
+		<!-- parking type select options -->
+			<trans-unit id="tx_trader_domain_model_object.typeparking">
+				<source>Parking lot type</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.typeparking.0">
+				<source>None</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.typeparking.1">
+				<source>Indoor</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.typeparking.2">
+				<source>Outdoor</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.typeparking.3">
+				<source>Outdoor Covered</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.typeparking.4">
+				<source>Indoor and Outdoor</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.features">
+				<source>Features</source>
+			</trans-unit>
+
+
+		<!-- FINANCIAL TAB -->
+			<trans-unit id="tx_trader_domain_model_object.tab.financial">
+				<source>Financial</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.pricetotal">
+				<source>Total price</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.pricesqm">
+				<source>Price per sqm</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.pricetax">
+				<source>Tax</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.priceinc">
+				<source>Price inclusive of tax</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.pricereserved">
+				<source>Private negotiation</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.commisionint">
+				<source>Internal Commision</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.commintinc">
+				<source>Commision inclusive of tax</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.commisionext">
+				<source>External Commision</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.commextinc">
+				<source>Commision inclusive of tax</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.pricedeposit">
+				<source>Deposit Requested</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.priceparking">
+				<source>Price parking lot(s)</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.rent">
+				<source>Rent per month</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.rentparking">
+				<source>Rent parking lot(s)</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.heating">
+				<source>Expenses Heating</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.expenses">
+				<source>Other Expenses</source>
+			</trans-unit>
+
+		<!-- MEDIA TAB -->
+			<trans-unit id="tx_trader_domain_model_object.tab.media">
+				<source>Media</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.floorplans">
+				<source>Floorplans</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.video">
+				<source>Video</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_object.documents">
+				<source>Documents</source>
+			</trans-unit>
+
+		<!-- DETAILS TABLE -->
+			<trans-unit id="tx_trader_domain_model_details">
+				<source>Details</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_details.detail">
+				<source>Detail</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_details.description">
+				<source>Description</source>
+			</trans-unit>
+
+		<!-- FEATURES TABLE -->
+			<trans-unit id="tx_trader_domain_model_features">
+				<source>Features</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_features.feature">
+				<source>Feature</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_features.icon">
+				<source>Icon</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_features.searchname">
+				<source>Searchname</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_features.searchitem">
+				<source>Searchitem</source>
+			</trans-unit>
+
+
+		<!-- CONTACTS TABLE -->
+			<trans-unit id="tx_trader_domain_model_contacts">
+				<source>Contacts</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_contacts.contactname">
+				<source>Contactname</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_contacts.contactadress">
+				<source>Contactadress</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_contacts.contactemail">
+				<source>Contactemail</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_contacts.contactphone">
+				<source>Contactphone</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_contacts.contactcell">
+				<source>Contactcell</source>
+			</trans-unit>
+
+
+		<!-- TAGS TABLE -->
+			<trans-unit id="tx_trader_domain_model_tags">
+				<source>Tags</source>
+			</trans-unit>
+			<trans-unit id="tx_trader_domain_model_tags.tag">
+				<source>Tag</source>
+			</trans-unit>
+
+
+		<!-- FLEXFORM -->
+			<trans-unit id="flexforms.trader.tabs.general">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.switchableControllerActions">
+				<source>What to display</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.switchableControllerActions.1">
+				<source>List view</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.switchableControllerActions.2">
+				<source>Detail view</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.switchableControllerActions.3">
+				<source>Counter</source>
+			</trans-unit>
+
+			<trans-unit id="flexforms.trader.tabs.list">
+				<source>List</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.entryInclude">
+				<source>What to include</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.entryInclude.1">
+				<source>Only objects</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.entryInclude.2">
+				<source>Only projects</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.entryInclude.3">
+				<source>Projects and objects</source>
+			</trans-unit>
+
+			<trans-unit id="flexforms.trader.entryNumber">
+				<source>Number of items in the list</source>
+			</trans-unit>
+
+			<trans-unit id="flexforms.trader.tabs.navigation">
+				<source>Navigation</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.detailPid">
+				<source>PageId for item detail display</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.listPid">
+				<source>PageId for list display</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.backPid">
+				<source>PageId to return to</source>
+			</trans-unit>
+
+			<trans-unit id="flexforms.trader.hidePagination">
+				<source>Hide the pagination</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.itemsPerPage">
+				<source>Items per Page</source>
+			</trans-unit>
+
+			<trans-unit id="flexforms.trader.tabs.options">
+				<source>Options</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.imageWidth">
+				<source>Image width (px)</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.imageHeight">
+				<source>Image height (px)</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.template">
+				<source>Template</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.template.1">
+				<source>Homepage</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.template.2">
+				<source>Listpage</source>
+			</trans-unit>
+			<trans-unit id="flexforms.trader.template.3">
+				<source>Free</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<!--
+	=====================
+		Templates/Object/Show.html -->
+
+<f:section name="main">
+	<f:if condition="{object}">
+		<f:then>
+			<div class="trader-row">
+				<f:render partial="Detail/Page" arguments="{object:object, settings:settings}" />
+			</div>
+		</f:then>
+		<f:else>
+			<div class="no-object-found">
+				<f:translate key="list_noobjectsfound" />
+			</div>
+		</f:else>
+	</f:if>
+</f:section>
+</html>

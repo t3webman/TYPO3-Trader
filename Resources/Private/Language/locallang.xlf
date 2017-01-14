@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-12-06T08:33:49Z" product-name="trader">
+		<header/>
+		<body>
+			<trans-unit id="room" xml:space="preserve">
+				<source>Room</source>
+			</trans-unit>
+			<trans-unit id="rooms" xml:space="preserve">
+				<source>Rooms</source>
+			</trans-unit>
+			<trans-unit id="bedroom" xml:space="preserve">
+				<source>Bedroom</source>
+			</trans-unit>
+			<trans-unit id="bedrooms" xml:space="preserve">
+				<source>Bedrooms</source>
+			</trans-unit>
+			<trans-unit id="bathroom" xml:space="preserve">
+				<source>Bathroom</source>
+			</trans-unit>
+			<trans-unit id="bathrooms" xml:space="preserve">
+				<source>Bathrooms</source>
+			</trans-unit>
+
+			<trans-unit id="unit" xml:space="preserve">
+				<source>Unit</source>
+			</trans-unit>
+			<trans-unit id="units" xml:space="preserve">
+				<source>Units</source>
+			</trans-unit>
+			<trans-unit id="sold" xml:space="preserve">
+				<source>Sold</source>
+			</trans-unit>
+			<trans-unit id="sold.1" xml:space="preserve">
+				<source>Sold</source>
+			</trans-unit>
+			<trans-unit id="delivery" xml:space="preserve">
+				<source>Delivery</source>
+			</trans-unit>
+			<trans-unit id="priceReserved" xml:space="preserve">
+				<source>Private negotiation</source>
+			</trans-unit>
+			<trans-unit id="rProject" xml:space="preserve">
+				<source>Real estate project</source>
+			</trans-unit>
+			<trans-unit id="sold" xml:space="preserve">
+				<source>Sold</source>
+			</trans-unit>
+			<trans-unit id="sqm" xml:space="preserve">
+				<source>Sq m</source>
+			</trans-unit>
+			<trans-unit id="sqft" xml:space="preserve">
+				<source>Sq ft</source>
+			</trans-unit>
+
+			<trans-unit id="marketing.1" xml:space="preserve">
+				<source>For Rent</source>
+			</trans-unit>
+			<trans-unit id="marketing.2" xml:space="preserve">
+				<source>For Sale</source>
+			</trans-unit>
+			<trans-unit id="per.month" xml:space="preserve">
+				<source>per month</source>
+			</trans-unit>
+
+			<trans-unit id="features" xml:space="preserve">
+				<source>Features</source>
+			</trans-unit>
+			<trans-unit id="additional.details" xml:space="preserve">
+				<source>Additional details</source>
+			</trans-unit>
+			<trans-unit id="floor.plan" xml:space="preserve">
+				<source>Floor plan</source>
+			</trans-unit>
+			<trans-unit id="floor.plans" xml:space="preserve">
+				<source>Floor plans</source>
+			</trans-unit>
+			<trans-unit id="objects" xml:space="preserve">
+				<source>Project units</source>
+			</trans-unit>
+
+			<trans-unit id="reference" xml:space="preserve">
+				<source>reference</source>
+			</trans-unit>
+			<trans-unit id="title" xml:space="preserve">
+				<source>title</source>
+			</trans-unit>
+
+			<trans-unit id="status" xml:space="preserve">
+				<source>status</source>
+			</trans-unit>
+			<trans-unit id="status.0" xml:space="preserve">
+				<source>Available</source>
+			</trans-unit>
+			<trans-unit id="status.1" xml:space="preserve">
+				<source>Reserved</source>
+			</trans-unit>
+			<trans-unit id="status.2" xml:space="preserve">
+				<source>Sold</source>
+			</trans-unit>
+			<trans-unit id="status.3" xml:space="preserve">
+				<source>Archived</source>
+			</trans-unit>
+
+			<trans-unit id="list_noobjectsfound" xml:space="preserve">
+				<source>No items available.</source>
+			</trans-unit>
+			<trans-unit id="list_nocategoriesfound" xml:space="preserve">
+				<source>No categories available.</source>
+			</trans-unit>
+
+			<trans-unit id="pagination_page">
+				<source>Page</source>
+			</trans-unit>
+			<trans-unit id="pagination_first">
+				<source>First</source>
+			</trans-unit>
+			<trans-unit id="pagination_last">
+				<source>Last</source>
+			</trans-unit>
+			<trans-unit id="pagination_previous">
+				<source>Previous</source>
+			</trans-unit>
+			<trans-unit id="pagination_next">
+				<source>Next</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

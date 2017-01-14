@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<!--
+	=====================
+		Partials/Detail/Details/Object.html-->
+
+	<div id="object-details" class="section">
+		<h3 class="section-title"><span><f:translate key="additional.details" /></span></h3>
+		<ul class="nav nav-tabs" role="tablist">
+			<f:for each="{object.details}" as="detail" iteration="iteration">
+				<li role="presentation" class="{f:if(condition:'{iteration.isFirst}',then:' active')}">
+					<a href="#additional-{iteration.index}" aria-controls="additional-{iteration.index}" role="tab" data-toggle="tab" aria-expanded="false">
+						{detail.detail}
+					</a>
+				</li>
+			</f:for>
+		</ul>
+		<div class="tab-content">
+			<f:for each="{object.details}" as="detail" iteration="iteration">
+				<div role="tabpanel" class="tab-pane{f:if(condition:'{iteration.isFirst}',then:' active')}" id="additional-{iteration.index}">
+					{detail.description -> f:format.html()}
+				</div>
+			</f:for>
+		</div>
+	</div>
+</html>

@@ -1,0 +1,51 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<!--
+	=====================
+		Partials/Detail/Floorplans/Object.html-->
+
+	<div id="object-floorplans" class="section">
+		<h3 class="section-title">
+			<span>
+				<f:if condition="{f:count(subject: object.floorplans)} == 1">
+					<f:then>
+						<f:translate key="floor.plan" />
+					</f:then>
+					<f:else>
+						<f:translate key="floor.plans" />
+					</f:else>
+				</f:if>
+			</span>
+		</h3>
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			<f:for each="{object.floorplans}" as="floorplan" iteration="iteration">
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="floor-plan-{iteration.index}">
+						<h3 class="panel-title">
+							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{iteration.index}" aria-expanded="true" aria-controls="collapse-{iteration.index}">
+								{floorplan.originalResource.title}
+							</a>
+						</h3>
+					</div>
+					<div id="collapse-{iteration.index}" class="panel-collapse collapse{f:if(condition:'{iteration.isFirst}',then:' in')}" role="tabpanel" aria-labelledby="floor-plan-{iteration.index}">
+						<f:if condition="{floorplan.originalResource.link}">
+							<f:then>
+								<f:link.page pageUid="{floorplan.originalResource.link}">
+									<f:image src="{floorplan.originalResource.publicUrl}" title="{floorplan.originalResource.title}" alt="{floorplan.originalResource.alternative}" class="img-responsive" />
+								</f:link.page>
+							</f:then>
+							<f:else>
+								<f:image src="{floorplan.originalResource.publicUrl}" title="{floorplan.originalResource.title}" alt="{floorplan.originalResource.alternative}" class="img-responsive" />
+							</f:else>
+						</f:if>
+						<f:if condition="{floorplan.originalResource.description}">
+							<div class="panel-body">
+								{floorplan.originalResource.description}
+							</div>
+						</f:if>
+					</div>
+				</div>
+			</f:for>
+		</div>
+	</div>
+</html>

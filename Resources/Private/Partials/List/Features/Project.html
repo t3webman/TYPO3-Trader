@@ -1,0 +1,67 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+{namespace nr=Newred\Trader\ViewHelpers}
+<!--
+	=====================
+		Partials/List/Features/Project.html-->
+
+	<div class="object-meta clearfix">
+		<div>
+			<div class="meta-title"><i class="icon-houses"></i></div>
+			<div class="meta-data" data-toggle="tooltip" title="{f:translate(key: 'units')}">
+				<f:count>{object.objects}</f:count>
+				<f:if condition="{f:count(subject: object.objects)} == 1">
+					<f:then>
+						<f:translate key="unit" />
+					</f:then>
+					<f:else>
+						<f:translate key="units" />
+					</f:else>
+				</f:if>
+			</div>
+		</div>
+		<div>
+			<div class="meta-title"><i class="icon-pen"></i></div>
+			<div class="meta-data" data-toggle="tooltip" title="{f:translate(key: 'sold')}">??
+				<f:translate key="sold" />
+			</div>
+		</div>
+		<div>
+			<div class="meta-title"><i class="icon-shovel"></i></div>
+			<div class="meta-data" data-toggle="tooltip" title="Construction">
+				<f:format.date format="Y">{object.builddate}</f:format.date>
+			</div>
+		</div>
+		<div>
+			<div class="meta-title"><i class="icon-delivery"></i></div>
+			<div class="meta-data" data-toggle="tooltip" title="Delivery">
+				<f:translate key="delivery" />
+				<f:format.date format="m/Y">{object.availdate}</f:format.date>
+			</div>
+		</div>
+	</div>
+
+	<div class="object-foot">
+
+	<!-- Price -->
+		<div class="price-tag">
+			<f:translate key="rProject" />
+		</div>
+
+	<!-- Icons -->
+		<div class="socials">
+			<span style="position: relative">
+				<div class="share-unit" style="display: none;">
+					<a class="social-facebook" target="_blank" href="#"><i class="icon-facebook"></i></a>
+					<a class="social-twitter" target="_blank" href="#"><i class="icon-twitter"></i></a>
+					<a class="social-google" target="_blank" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" href="#"><i class="icon-google-plus"></i></a>
+					<a class="social-pinterest" target="_blank" href="#"><i class="icon-pinterest"></i></a>
+				</div>
+				<i class="icon-share share-property" data-toggle="tooltip" data-original-title="Share" title="Share"></i>
+			</span>
+			&nbsp;
+		</div>
+		<div class="clearfix"></div>
+
+	</div><!-- .object-foot -->
+</html>

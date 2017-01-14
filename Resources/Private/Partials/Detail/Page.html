@@ -1,0 +1,136 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+{namespace nr=Newred\Trader\ViewHelpers}
+
+<nr:includeFile path="EXT:trader/Resources/Public/Js/Object.js" />
+
+<!--
+	data-ride="carousel" automatic start
+	=====================
+		Partials/Detail/Object.html -->
+
+	<section class="object">
+		<div id="carousel-{object.uid}" class="carousel carousel-fade slide center-block" data-interval="false" style="max-width: {settings.detail.fullScreen}px">
+
+			<!-- indicators carousel-->
+			<f:if condition="{f:count(subject: object.images)} > 1">
+				<ol class="carousel-indicators">
+					<f:for each="{object.images}" as="carousel-indicators" iteration="iteration-indicators">
+						<li data-target="#carousel-{object.uid}" data-slide-to="{iteration-indicators.index}"
+						{f:if(condition:'{iteration-indicators.isFirst}',then:' class="active"')}></li>
+					</f:for>
+				</ol>
+			</f:if>
+
+			<!-- main slider carousel-->
+			<div class="carousel-inner" role="listbox">
+				<f:if condition="{object.images}">
+					<f:then>
+						<f:render section="images" arguments="{images: object.images, settings: settings}"/>
+							<f:if condition="{f:count(subject: object.images)} > 1">
+						</div><!-- /carousel-inner -->
+
+							<!-- prev next nav carousel-->
+							<a class="left carousel-control" href="#carousel-{object.uid}" role="button" data-slide="prev">
+								<span class="icon-prev" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-{object.uid}" role="button" data-slide="next">
+								<span class="icon-next" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div><!-- /carousel -->
+
+						<!-- thumb navigation carousel -->
+						<div id="carousel-{object.uid}-thumbs" class="carousel-thumbs">
+							<ul class="list-inline">
+								<f:render section="thumbs" arguments="{thumbs: object.images, settings: settings}"/>
+							</ul>
+						</f:if>
+					</f:then>
+					<f:else>
+						<div class="item">
+							<f:image src="{settings.detail.media.noBackground}" width="{settings.detail.media.image.maxWidth}c" height="{settings.detail.media.image.maxHeight}" class="img-responsive"></f:image>
+						</div>
+					</f:else>
+				</f:if>
+		</div><!-- /carousel or /carousel-thumbs-->
+
+		<!-- header -->
+		<div class="object-header">
+			<div class="container">
+				<f:if condition="{object.isproject}">
+					<f:then>
+						<f:render partial="Detail/Header/Project" arguments="{object: object}"/>
+					</f:then>
+					<f:else>
+						<f:render partial="Detail/Header/Object" arguments="{object: object}"/>
+					</f:else>
+				</f:if>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+
+		<!-- main content -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="main-content">
+						<f:link.action action="list">Back to list</f:link.action>
+
+						<f:if condition="{object.teaser}">
+							<div class="teaser">
+								{object.teaser -> f:format.html()}
+							</div>
+						</f:if>
+
+						<div id="object-description" class="section">
+							{object.description -> f:format.html()}
+						</div>
+
+					<!-- additional details -->
+						<f:if condition="{object.details}">
+							<f:render partial="Detail/Details/Object" arguments="{object: object}"/>
+						</f:if>
+
+					<!-- features -->
+						<f:if condition="{object.isproject}">
+							<f:then>
+								<f:render partial="Detail/Features/Project" arguments="{object: object}"/>
+							</f:then>
+							<f:else>
+								<f:render partial="Detail/Features/Object" arguments="{object: object}"/>
+							</f:else>
+						</f:if>
+
+					<!-- floorplans -->
+						<f:if condition="{object.floorplans}">
+							<f:render partial="Detail/Floorplans/Object" arguments="{object: object}"/>
+						</f:if>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<f:section name="images">
+	<f:for each="{images}" as="image">
+		<div class="item">
+			<f:image src="{image.uid}" treatIdAsReference="1" width="{settings.detail.media.image.maxWidth}c" height="{settings.detail.media.image.maxHeight}" class="img-responsive" />
+		</div>
+    </f:for>
+</f:section>
+
+<f:section name="thumbs">
+	<f:for each="{thumbs}" as="thumb" iteration="iteration-thumbs">
+		<li style="max-width:22%;">
+			<a id="carousel-selector-{iteration-thumbs.index}"
+				{f:if(condition:'{iteration-thumbs.isFirst}',then:' class="selected"')}>
+				<f:image src="{thumb.uid}" treatIdAsReference="1" width="{settings.detail.media.thumb.maxWidth}c" height="{settings.detail.media.thumb.maxHeight}" class="img-responsive" />
+			</a>
+		</li>
+    </f:for>
+</f:section>
+</html>

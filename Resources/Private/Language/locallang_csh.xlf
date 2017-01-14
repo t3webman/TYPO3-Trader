@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-12-06T08:33:49Z" product-name="trader">
+		<header/>
+		<body>
+			<trans-unit id="reference.description">
+				<source>an univocal technical name/number for listing and recognizing the object</source>
+			</trans-unit>
+			<trans-unit id="tag.description">
+				<source>a attention attracting tag placed in listing and object header</source>
+			</trans-unit>
+			<trans-unit id="featured.description">
+				<source>highlights the object and lists it prior in sequence together with other featured objects</source>
+			</trans-unit>
+			<trans-unit id="isproject.description">
+				<source>Check this box if the project is a parent of various objects and not a single stock item</source>
+			</trans-unit>
+			<trans-unit id="objects.description">
+				<source>Objects pertaining to this project</source>
+			</trans-unit>
+			<trans-unit id="title.description">
+				<source>a descriptive line for the object used as headline</source>
+			</trans-unit>
+			<trans-unit id="teaser.description">
+				<source>a short description used instead of a distinct number of characters of the description</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>a description of the object</source>
+			</trans-unit>
+
+			<trans-unit id="rented.description">
+				<source>rented</source>
+			</trans-unit>
+			<trans-unit id="rentdate.description">
+				<source>rentdate</source>
+			</trans-unit>
+			<trans-unit id="marketing.description">
+				<source>marketing</source>
+			</trans-unit>
+			<trans-unit id="street.description">
+				<source>street</source>
+			</trans-unit>
+			<trans-unit id="number.description">
+				<source>number</source>
+			</trans-unit>
+			<trans-unit id="zip.description">
+				<source>zip</source>
+			</trans-unit>
+			<trans-unit id="region.description">
+				<source>region</source>
+			</trans-unit>
+			<trans-unit id="province.description">
+				<source>province</source>
+			</trans-unit>
+			<trans-unit id="country.description">
+				<source>country</source>
+			</trans-unit>
+			<trans-unit id="latitude.description">
+				<source>latitude</source>
+			</trans-unit>
+			<trans-unit id="longitude.description">
+				<source>longitude</source>
+			</trans-unit>
+			<trans-unit id="hideadress.description">
+				<source>hideadress</source>
+			</trans-unit>
+			<trans-unit id="hidecontact.description">
+				<source>hidecontact</source>
+			</trans-unit>
+			<trans-unit id="far.description">
+				<source>the proportion between the total floor area and the lot size</source>
+			</trans-unit>
+			<trans-unit id="fsi.description">
+				<source>the regulatory imposed limit on the proportion between the total floor area and the lot size</source>
+			</trans-unit>
+			<trans-unit id="yearbuild.description">
+				<source>year the object was build</source>
+			</trans-unit>
+			<trans-unit id="areatotal.description">
+				<source>areatotal</source>
+			</trans-unit>
+			<trans-unit id="areausable.description">
+				<source>areausable</source>
+			</trans-unit>
+			<trans-unit id="arealiving.description">
+				<source>arealiving</source>
+			</trans-unit>
+			<trans-unit id="areabase.description">
+				<source>areabase</source>
+			</trans-unit>
+			<trans-unit id="floor.description">
+				<source>floor</source>
+			</trans-unit>
+			<trans-unit id="floors.description">
+				<source>floors</source>
+			</trans-unit>
+			<trans-unit id="norooms.description">
+				<source>norooms</source>
+			</trans-unit>
+			<trans-unit id="nobedrooms.description">
+				<source>nobedrooms</source>
+			</trans-unit>
+			<trans-unit id="nobathrooms.description">
+				<source>nobathrooms</source>
+			</trans-unit>
+			<trans-unit id="noparking.description">
+				<source>noparking</source>
+			</trans-unit>
+			<trans-unit id="typeparking.description">
+				<source>typeparking</source>
+			</trans-unit>
+			<trans-unit id="pricetotal.description">
+				<source>pricetotal</source>
+			</trans-unit>
+			<trans-unit id="pricesqm.description">
+				<source>pricesqm</source>
+			</trans-unit>
+			<trans-unit id="pricetax.description">
+				<source>pricetax</source>
+			</trans-unit>
+			<trans-unit id="priceinc.description">
+				<source>priceinc</source>
+			</trans-unit>
+			<trans-unit id="commisionint.description">
+				<source>commisionint</source>
+			</trans-unit>
+			<trans-unit id="commintinc.description">
+				<source>commintinc</source>
+			</trans-unit>
+			<trans-unit id="commisionext.description">
+				<source>commisionext</source>
+			</trans-unit>
+			<trans-unit id="commextinc.description">
+				<source>commextinc</source>
+			</trans-unit>
+			<trans-unit id="pricedeposit.description">
+				<source>pricedeposit</source>
+			</trans-unit>
+			<trans-unit id="priceparking.description">
+				<source>priceparking</source>
+			</trans-unit>
+			<trans-unit id="rent.description">
+				<source>rent</source>
+			</trans-unit>
+			<trans-unit id="rentparking.description">
+				<source>rentparking</source>
+			</trans-unit>
+			<trans-unit id="heating.description">
+				<source>heating</source>
+			</trans-unit>
+			<trans-unit id="expenses.description">
+				<source>expenses</source>
+			</trans-unit>
+			<trans-unit id="images.description">
+				<source>images</source>
+			</trans-unit>
+			<trans-unit id="floorplans.description">
+				<source>floorplans</source>
+			</trans-unit>
+			<trans-unit id="video.description">
+				<source>video</source>
+			</trans-unit>
+			<trans-unit id="documents.description">
+				<source>documents</source>
+			</trans-unit>
+			<trans-unit id="features.description">
+				<source>features</source>
+			</trans-unit>
+			<trans-unit id="contact.description">
+				<source>contact</source>
+			</trans-unit>
+			<trans-unit id="owner.description">
+				<source>owner</source>
+			</trans-unit>
+			<trans-unit id="broker.description">
+				<source>broker</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

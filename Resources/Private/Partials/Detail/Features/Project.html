@@ -1,0 +1,51 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<!--
+	=====================
+		Partials/Detail/Features/Project.html-->
+
+	<f:if condition="{object.objects}">
+		<div id="object-objects" class="section panel">
+			<h3 class="section-title"><span><f:translate key="objects" /></span></h3>
+			<div class="panel-group">
+				<div class="panel panel-default">
+					<table class="table">
+						<thead>
+							<tr>
+								<th><f:translate key="reference" /></th>
+								<th><f:translate key="title" /></th>
+								<th class="hidden-xs"><f:translate key="status" /></th>
+							</tr>
+						</thead>
+						<tbody>
+						<f:for each="{object.objects}" as="unit">
+							<tr class="clickable-row" data-href="url://">
+								<td>
+									<f:if condition="{unit.status} == 0">
+										<f:then>
+											<i class="icon-check text-primary"></i>
+										</f:then>
+										<f:else>
+											<i class="icon-remove text-danger"></i>
+										</f:else>
+									</f:if>
+									{unit.reference}
+								</td>
+								<td>
+									{unit.title}
+								</td>
+								<td class="hidden-xs">
+									<span class="{f:if(condition:'{unit.status} == 0', then:'text-primary', else:'text-danger')}">
+										<f:translate key="status.{unit.status}" />
+									</span>
+								</td>
+							</tr>
+						</f:for>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</f:if>
+
+</html>

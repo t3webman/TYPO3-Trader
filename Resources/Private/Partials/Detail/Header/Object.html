@@ -1,0 +1,64 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+{namespace nr=Newred\Trader\ViewHelpers}
+<!--
+	=====================
+		Partials/Detail/Header/Object.html-->
+
+	<div class="title">
+		{object.title}
+
+	<!-- Icons -->
+		<div class="clearfix mobile"></div>
+		<div class="socials">
+			<i class="icon-heart add-to-favorites" data-fav-id="142" data-toggle="tooltip" title="Add To Favorites"></i>
+			<f:if condition="{object.videos}">
+				<a href="#" class="property-video-popup">
+					<i class="icon-video" data-toggle="tooltip" title="Watch Trailer"></i>
+				</a>
+			</f:if>
+			<a href="#location">
+				<i class="icon-location" data-toggle="tooltip" title="" data-original-title="Show Location"></i>
+			</a>
+			<i class="icon-email add-to-follow" data-fol-id="142" data-toggle="tooltip" title="" title="Subscribe To Email Updates"></i>
+		</div>
+	</div><!-- /title -->
+
+	<div class="info meta">
+		<f:if condition="{object.categories}">
+			<f:for each="{object.categories}" as="category">
+				<f:if condition="{category.parentcategory}">
+					 <nr:format string="{category.title}" /> -
+				</f:if>
+			</f:for>
+		</f:if>
+		<f:translate key="marketing.{object.marketing}" />
+	</div>
+	<div class="clearfix"></div>
+
+	<div class="price-tag meta">
+		<f:if condition="{object.pricereserved}">
+			<f:then>
+				<f:translate key="priceReserved" />
+			</f:then>
+			<f:else>
+				<f:if condition="{object.marketing} == 1">
+					<!-- rent -->
+					<f:format.currency currencySign="Chf." prependCurrency="true" decimals="0">{object.rent}</f:format.currency>
+					<f:translate key="per.month" />
+				</f:if>
+				<f:if condition="{object.marketing} == 2">
+					<!-- sale -->
+					<f:format.currency currencySign="Chf." prependCurrency="true" decimals="0">{object.pricetotal}</f:format.currency>
+				</f:if>
+			</f:else>
+		</f:if>
+	</div>
+	<div class="clearfix"></div>
+
+	<f:if condition="{object.tag}">
+		<div class="object-tag meta">{object.tag.tag}</div>
+		<div class="clearfix"></div>
+	</f:if>
+
+</html>

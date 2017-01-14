@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<!--
+	=====================
+		Partials/Detail/Features/Object.html-->
+
+	<f:if condition="{object.features}">
+		<div id="object-features" class="section">
+			<h3 class="section-title"><span><f:translate key="features" /></span></h3>
+			<ul class="list-unstyled row">
+				<f:for each="{object.features}" as="feature">
+					<li class="col-sm-4 col-md-3">
+						<a href="#">
+							<i class="icon-check text-primary"></i>
+							{feature.feature}
+						</a>
+					</li>
+				</f:for>
+			</ul>
+		</div>
+	</f:if>
+</html>

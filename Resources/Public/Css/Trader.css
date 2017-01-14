@@ -1,0 +1,522 @@
+/***************************************/
+/* Default styles for trader extension */
+/***************************************/
+
+/* featured #43becc */
+
+/* bootstrap override */
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.jumbotron {
+    margin-bottom: 0px;
+    min-height: 10px;
+}
+.navbar-header .navbar-brand > img {
+    height: 25px;
+    margin-top: -2.5px;
+}
+.nav-tabs li.active a {
+    color: #787878;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: #555555;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+.text-primary {
+    color: #43becc;
+}
+.clickable-row {
+    opacity: .8;
+    background-color: #f8f8f8;
+}
+.clickable-row:hover {
+    cursor: pointer;
+    opacity: 1;
+    background-color: #fff;
+}
+.panel-group .panel .panel-body {
+    border-top: none !important;
+}
+.panel-group {
+    margin-bottom: 0px;
+}
+
+/* trader */
+.trader i {
+    display: inline-block;
+    font-style: normal;
+    transition: all 0.2s;
+}
+.trader a {
+    text-decoration: none;
+}
+.object-meta {
+    padding: 15px;
+    font-size: 0.9em;
+    line-height: 2;
+    color: #999;
+    text-align: center;
+}
+.object-meta .meta-title {
+    display: inline-block;
+    width: 25px;
+}
+.object-meta .meta-data {
+    display: inline-block;
+}
+.object-meta > div {
+    width: 50%;
+    float: left;
+}
+@media (min-width: 768px) {
+  .object-meta {
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  .object-meta > div {
+    width: 50%;
+  }
+}
+
+.object-tag.tag-left {
+    left: 10px;
+}
+.object-tag.tag-right {
+    right: 10px;
+}
+.object-tag {
+    width: auto;
+    position: absolute;
+    background: #23282d;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 6px 8px;
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    opacity: .8;
+}
+.trader .section {
+    margin-bottom: 50px;
+}
+.trader .section-title {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 300;
+    color: #787878;
+}
+.trader .section-title span {
+    background-color: #fff;
+    position: relative;
+    display: inline-block;
+    padding-right: 1em;
+    line-height: 1;
+}
+.trader .section-title::after {
+    position: absolute;
+    z-index: -2;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    margin-left: 1em;
+    content: "";
+    height: 2px;
+    width: 9999px;
+    background-color: #e6e6e6;
+}
+
+/* HomeObject */
+.trader .homeObject {
+    position: relative;
+    margin-bottom: 30px;
+    background-color: #fbfbfb;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.15);
+    transition: all .2s;
+}
+.trader .homeObject:hover {
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+}
+.trader .homeObject .object-tag {
+    top: 10px;
+}
+.trader .homeObject:hover .object-tag {
+    display: none;
+}
+.trader .homeObject .object-preview {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+.trader .homeObject img {
+    max-width: none;
+    transition: all 0.5s;
+    border-style: none;
+    backface-visibility: hidden;
+}
+@media (min-width: 768px) {
+  .trader .homeObject img {
+    width: calc(100% + 20px) !important;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transform: translate3d(-10px, 0, 0);
+  }
+  .trader .homeObject:hover img {
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.trader .homeObject figcaption {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s;
+}
+@media (min-width: 768px) {
+  .trader .homeObject figcaption {
+    position: absolute;
+  }
+}
+
+.trader .homeObject .object-intro {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px 15px;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    transition: all 0.3s;
+}
+.trader .homeObject .object-intro p {
+    font-size: 1.15em;
+    margin: 0 0 1em;
+    line-height: 2;
+}
+.trader .homeObject:hover .object-intro {
+    opacity: 1;
+}
+.trader .homeObject .object-intro::after {
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #43becc;
+    background-color: #43becc;
+    content: '';
+    transition: all 0.3s;
+    transform: translate3d(-100%, 0, 0);
+}
+@media (min-width: 768px) {
+  .trader .homeObject .object-intro {
+    display: block;
+  }
+}
+
+.trader .homeObject .object-title {
+    position: relative;
+    z-index: 0;
+    padding: 15px 0px 15px 15px;
+}
+.trader .homeObject .object-title p {
+    margin: 0px;
+    font-size: 1.5em;
+}
+.trader .homeObject .object-title::after {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+.trader .homeObject .object-title h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.trader .homeObject.featured .object-title::after {
+    background-color: #43becc;
+}
+.trader .homeObject.featured .object-title a {
+    color: #eee;
+}
+.trader .homeObject.featured .object-title a:hover {
+    color: #fff;
+}
+
+.trader .homeObject .object-foot {
+    position: relative;
+    padding: 0 5px 0 15px;
+    color: #787878;
+    text-align: left;
+    border-top: 1px solid #eeeeee;
+    line-height: 50px !important;
+}
+.trader .homeObject .object-foot .price-tag {
+    float: left;
+    color: #777;
+    font-weight: 400;
+}
+.trader .homeObject .object-foot .socials {
+    float: right;
+}
+.trader .homeObject .object-foot a {
+    color: #787878;
+}
+.trader .homeObject .object-foot i {
+    opacity: 0.3;
+    margin-right: 5px;
+}
+.trader .homeObject .object-foot i:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+@media (min-width: 992px) {
+  .trader .homeObject .object-foot {
+    font-size: 1.1em;
+  }
+}
+
+/* Object (detail) */
+.trader .object {
+    position: relative;
+}
+.trader .object #main-content {
+    padding: 25px;
+}
+#object-features li a {
+    display: inline-block;
+    line-height: 3;
+    color: #787878;
+}
+.trader .object .carousel-thumbs,
+.trader .object .carousel {
+    z-index: 1;
+}
+.trader .object .object-header {
+    padding: 40px 0 0;
+}
+@media (min-width: 768px) {
+  .trader .object .object-header {
+    z-index: 10;
+    padding: 40px 80px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    min-height: 150px;
+    text-align: left;
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.65));
+  }
+}
+
+.trader .object-header .title {
+    font-size: 2em;
+}
+.trader .object-header .title i {
+    opacity: 0.4;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+.trader .object-header .title a {
+    color: #333;
+}
+.trader .object-header .price-tag,
+.trader .object-header .info {
+    font-size: 1.4em;
+}
+.trader .object-header .socials {
+    float: right;
+}
+.trader .object-header .meta {
+    font-size: 1.4em;
+    opacity: .8;
+    margin: 5px 0 15px;
+}
+.trader .object-header .object-tag.meta {
+    font-size: 1.1em;
+}
+@media (min-width: 768px) {
+  .trader .object-header .title [class^="icon-"]:before,
+  .trader .object-header .title [class*=" icon-"]:before {
+    width: .5em;
+  }
+  .trader .object-header .clearfix.mobile {
+    display: none;
+  }
+  .trader .object-header .title  {
+    display: inline-block;
+    font-size: 2.8em;
+    color: #fff;
+  }
+  .trader .object-header .title i {
+    vertical-align: text-top;
+    font-size: 0.5em;
+  }
+  .trader .object-header .title a {
+    color: #fff;
+  }
+  .trader .object-header .title i:hover {
+    opacity: 0.8;
+  }
+  .trader .object-header .meta {
+    font-size: 1.6em;
+  }
+  .trader .object-header .price-tag,
+  .trader .object-header .info  {
+    color: #fff;
+  }
+}
+@media (min-width: 992px) {
+  .trader .object-header .title {
+    font-size: 3.6em;
+  }
+}
+
+/* carousel */
+.carousel-thumbs {
+    position: relative;
+    text-align: center;
+}
+.carousel-thumbs ul {
+    margin: 0px auto;
+}
+@media (min-width: 768px) {
+  .carousel-thumbs ul {
+    margin: 25px auto;
+  }
+}
+.carousel-thumbs ul li {
+    margin: 5px auto;
+}
+.carousel-thumbs ul a img {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.carousel-thumbs ul a.selected img {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 12;
+}
+
+/* carousel modern browsers */
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+.carousel-control.right,
+.carousel-control.left {
+   background-image: none;
+}
+
+.carousel-control .icon-prev {
+   left: 10px;
+}
+.carousel-control .icon-next {
+   right: 45px;
+}
+@media (min-width: 768px) {
+  .carousel-control .icon-next {
+   right: 65px;
+  }
+}
+.carousel-control .icon-prev:before {
+    content: '\e805';
+    font-size: 2em;
+}
+.carousel-control .icon-next:before {
+    content: '\e806';
+    font-size: 2em;
+}
+
+.carousel-indicators li {
+    margin: 0 3px;
+    width: 14px;
+    height: 14px;
+    text-indent: 0px;
+    border: 0px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.75); 
+}
+.carousel-indicators .active {
+    margin: 0 3px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(255,255,255,0.75);
+    background-color: transparent;
+}
+@media (min-width: 768px) {
+  .carousel-indicators li {
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+  }
+  .carousel-indicators .active {
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    border-width: 3px;
+  }
+}

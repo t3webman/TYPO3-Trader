@@ -1,0 +1,116 @@
+
+<f:if condition="{configuration.insertAbove}">
+	<f:render section="paginator" arguments="{pagination: pagination,configuration:configuration}" />
+</f:if>
+
+<f:renderChildren arguments="{contentArguments}" />
+
+<f:if condition="{configuration.insertBelow}">
+	<f:render section="paginator" arguments="{pagination: pagination,configuration:configuration}" />
+</f:if>
+
+<f:section name="paginator">
+	<ul class="paginator pagination">
+		<!-- First -->
+		<f:if condition="{pagination}">
+			<f:if condition="{f:translate(key:'pagination_first')}">
+				<f:if condition="{pagination.isFirstPage}">
+					<f:else>
+						<li class="first">
+							<f:widget.link title="{f:translate(key: 'pagination_first')}">
+								<i class="icon-left-1"></i>
+							</f:widget.link>
+						</li>
+					</f:else>
+				</f:if>
+			</f:if>
+		</f:if>
+
+		<!-- Previous -->
+		<f:if condition="{pagination}">
+			<f:if condition="{f:translate(key:'pagination_previous')}">
+				<f:if condition="{pagination.previousPage}">
+					<f:then>
+						<li class="previous">
+							<f:if condition="{pagination.previousPage} > 1">
+								<f:then>
+									<f:widget.link arguments="{currentPage: pagination.previousPage}" title="{f:translate(key: 'pagination_previous')}">
+										<i class="icon-arrow-left"></i>
+									</f:widget.link>
+								</f:then>
+								<f:else>
+									<f:widget.link title="{f:translate(key: 'pagination_previous')}">
+										<i class="icon-arrow-left"></i>
+									</f:widget.link>
+								</f:else>
+							</f:if>
+						</li>
+					</f:then>
+				</f:if>
+			</f:if>
+		</f:if>
+
+		<!-- Dots before paginate -->
+		<f:if condition="{configuration.displayDots}">
+			<f:if condition="{pagination.hasLessPages}">
+				<li><span>...</span></li>
+			</f:if>
+		</f:if>
+
+		<f:for each="{pagination.pages}" as="page">
+			<f:if condition="{page.isCurrent}">
+				<f:then>
+					<li class="current active">
+						<span>{page.number}</span>
+					</li>
+				</f:then>
+				<f:else>
+					<li>
+						<f:if condition="{page.number} > 1">
+							<f:then>
+								<f:widget.link arguments="{currentPage: page.number}" title="{f:translate(key: 'pagination_page')} {page.number}">
+									{page.number}
+								</f:widget.link>
+							</f:then>
+							<f:else>
+								<f:widget.link>{page.number}</f:widget.link>
+							</f:else>
+						</f:if>
+					</li>
+				</f:else>
+			</f:if>
+		</f:for>
+
+		<!-- Dots after paginate -->
+		<f:if condition="{configuration.displayDots}">
+			<f:if condition="{pagination.hasMorePages}">
+				<li><span>...</span></li>
+			</f:if>
+		</f:if>
+
+		<!-- Next -->
+		<f:if condition="{pagination}">
+			<f:if condition="{f:translate(key:'pagination_next')}">
+				<li class="next">
+					<f:if condition="{pagination.nextPage}">
+						<f:widget.link arguments="{currentPage: pagination.nextPage}" title="{f:translate(key: 'pagination_next')}">
+							<i class="icon-arrow-right"></i>
+						</f:widget.link>
+					</f:if>
+				</li>
+			</f:if>
+		</f:if>
+		<!-- Last -->
+		<f:if condition="{pagination}">
+			<f:if condition="{f:translate(key:'pagination_last')}">
+				<li class="last">
+					<f:if condition="{pagination.isLastPage}==0">
+						<f:widget.link arguments="{currentPage: pagination.lastPage}" title="{f:translate(key: 'pagination_last')}">
+							<i class="icon-right-1"></i>
+						</f:widget.link>
+					</f:if>
+				</li>
+			</f:if>
+		</f:if>
+	</ul>
+</f:section>
