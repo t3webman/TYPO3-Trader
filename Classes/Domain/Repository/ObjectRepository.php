@@ -1,8 +1,5 @@
 <?php
-
 namespace Newred\Trader\Domain\Repository;
-
-
 
 /***
  *
